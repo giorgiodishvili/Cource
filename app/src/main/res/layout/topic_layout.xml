@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="319dp"
+    android:layout_height="105dp"
+    android:background="@drawable/cource_item_shape">
+
+    <ImageView
+
+        android:id="@+id/imageViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_topic_photo_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUrlIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBackground"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBackground" />
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="105dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="book for bla bla bla"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBackground" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="105dp"
+        android:layout_height="17dp"
+        android:text="book for bla bla bla"
+        android:layout_marginTop="8dp"
+        android:textColor="#803DD598"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground"
+        app:layout_constraintEnd_toEndOf="@+id/book" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_triangle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
